@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cosa.com.ejemplologinparcelable.IntentDireccion">
+
+    <TextView
+        android:id="@+id/lbl_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="29dp"
+        android:text="Direccion" />
+
+    <TextView
+        android:id="@+id/lbl_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Codigo Postal"
+        android:layout_below="@+id/editCalle"
+        android:layout_alignRight="@+id/lbl_direccion"
+        android:layout_alignEnd="@+id/lbl_direccion" />
+
+    <EditText
+        android:id="@+id/editCalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Introduzca la direccion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_cp"
+        android:layout_alignBottom="@+id/lbl_cp"
+        android:layout_alignLeft="@+id/editCalle"
+        android:layout_alignStart="@+id/editCalle"
+        android:ems="10"
+        android:hint="Introduzca CP"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/botonVolverDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="56dp"
+        android:text="Volver"
+        android:layout_below="@+id/editCP"
+        android:layout_alignLeft="@+id/lbl_cp"
+        android:layout_alignStart="@+id/lbl_cp" />
+
+    <Button
+        android:id="@+id/botonSalirDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_alignBaseline="@+id/botonSiguiente"
+        android:layout_alignBottom="@+id/botonSiguiente"
+        android:layout_alignRight="@+id/editCP"
+        android:layout_alignEnd="@+id/editCP" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/botonVolverDireccion"
+        android:layout_alignBottom="@+id/botonVolverDireccion"
+        android:layout_alignLeft="@+id/editCP"
+        android:layout_alignStart="@+id/editCP"
+        android:text="Siguiente" />
+</RelativeLayout>

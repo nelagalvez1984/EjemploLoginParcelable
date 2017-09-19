@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cosa.com.ejemplologinparcelable.IntentDatos">
+
+    <TextView
+        android:id="@+id/lbl_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="45dp"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/lbl_apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Apellidos"
+        android:layout_below="@+id/editNombre"
+        android:layout_alignRight="@+id/lbl_nombre"
+        android:layout_alignEnd="@+id/lbl_nombre" />
+
+    <TextView
+        android:id="@+id/lbl_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Edad"
+        android:layout_below="@+id/editApellidos"
+        android:layout_alignLeft="@+id/lbl_apellidos"
+        android:layout_alignStart="@+id/lbl_apellidos" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Introduzca nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_apellidos"
+        android:layout_alignBottom="@+id/lbl_apellidos"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Introduzca apellidos"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca edad"
+        android:layout_alignBaseline="@+id/lbl_edad"
+        android:layout_alignBottom="@+id/lbl_edad"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/botonResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEdad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Ir a direccion" />
+
+    <Button
+        android:id="@+id/botonSalirDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonResultados"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Salir" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cosa.com.ejemplologinparcelable.Resultados">
+
+    <TextView
+        android:id="@+id/resNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:layout_below="@+id/resApellidos"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/resApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="78dp"
+        android:layout_marginTop="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/resNombre"
+        android:layout_alignStart="@+id/resNombre" />
+
+    <TextView
+        android:id="@+id/resEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="121dp"
+        android:layout_below="@+id/resNombre"
+        android:layout_alignRight="@+id/resNombre"
+        android:layout_alignEnd="@+id/resNombre"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/resCalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resEdad"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/botonSalir"
+        android:layout_toRightOf="@+id/botonSalir"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/resCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resCalle"
+        android:layout_alignStart="@+id/resCalle"
+        android:layout_below="@+id/resCalle"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/botonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="173dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignBaseline="@+id/botonSalir"
+        android:layout_alignBottom="@+id/botonSalir"
+        android:layout_toRightOf="@+id/resNombre"
+        android:layout_toEndOf="@+id/resNombre" />
+
+    <Button
+        android:id="@+id/botonSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="173dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/resNombre"
+        android:layout_toStartOf="@+id/resNombre" />
+</RelativeLayout>
